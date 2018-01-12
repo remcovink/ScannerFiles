@@ -32,8 +32,8 @@ while True:
      print "Received cmd: "+ str(rcmd)
      print "Data: " + rdata
    if (rcmd == 1):
-     print "shooting"
-     cmd = "raspistill " + rdata
+     print "Executing cmd"
+     cmd = rdata
      pid = subprocess.call(cmd, shell=True)
 
 
